@@ -80,7 +80,7 @@ public ObjectMapper ObjectMapper() {
 }
 
 ```
-
+考虑到wkt比wkb在在序列化后可读性更高，所以这里使用了wkt的序列化/反序列化
 1. 在`ObjectMapper` 中添加 自定义序列化/反序列化类
 2. 序列化时全部都使用`GeometrySerializer`
 3. 反序列化需要根据不同的类型使用不同的`Deserializer`
